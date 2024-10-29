@@ -27,7 +27,7 @@ class BackgroundChanger extends Component {
   render() {
     return (
       <div className="background-container flex justify-center items-center  bg-gray-300 p-12">
-        <h1 className='text-white font-medium text-4xl z-1000 border-b-8'>
+        <h1 className='text-white font-medium text-4xl z-1000 border-b-8 border-b-orange-600'>
           BlueTiles
         </h1>
       </div>
