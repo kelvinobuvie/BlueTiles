@@ -2,8 +2,9 @@ import React from 'react'
 import "./App.css";
 import Login from './Pages/Login';
 import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom';
-// import SideBar from './component/sidebar';
+
 import Overview from './Pages/Overview/Overview';
+import SideBar from './component/SideBar';
 
 const App = () => {
   return (

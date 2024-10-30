@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundChanger from '../component/backgroundChanger'
+import BackgroundChanger from '../component/BackgroundChanger'
 import Input from '../component/Input'
 import { LuUser2 } from 'react-icons/lu'
 import { GoLock } from 'react-icons/go'
