@@ -3,7 +3,8 @@ import Nav from '../../component/Nav'
 import OverviewCards from '../../component/overview/OverviewCards'
 import SavingsExpenseChart from '../../component/overview/SavingsExpenseChart';
 import DashboardUpdate from '../../component/overview/TargetSummary';
-import RecentInspections from '../../component/overview/RecentTransactions';
+import RecentTransactions from '../../component/overview/RecentTransactions';
+import SetNewTargetBtn from '../../component/overview/SetNewTargetBtn';
 
 const data = [
   { month: 'January', savings: 50000, expenses: 30000 },
@@ -21,6 +22,15 @@ const Overview = () => {
     <div className='ml-56 px-4'>
         <Nav title={"Dashboard"}/>
         <div className='container'>
+          <div className="grid lg:flex justify-between">
+            <div>
+              <p className="font-normal text-2xl wel-t text-blue-950">Welcome, <span className="font-bold text-orange-500">Teniola</span></p>
+              <p className="mt-3 text-sm font-normal wel-b text-gray-700">Take a look at your and take a look a your tagrts, expenses and Transactions</p>
+            </div>
+            <div className="mt-6">
+              <SetNewTargetBtn/>
+          </div>
+          </div>
             <div>
               <OverviewCards/>
             </div>
@@ -38,7 +48,7 @@ const Overview = () => {
               </div>
             </div>
             <div className='mt-6'>
-              <RecentInspections/>
+              <RecentTransactions/>
             </div>
         </div>
     </div>
