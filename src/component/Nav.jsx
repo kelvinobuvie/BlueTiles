@@ -47,7 +47,7 @@ const Nav = ({ title }) => {
       <header>
         <nav>
           <div> 
-            <div className='nav mt-6  flex justify-between border-b-2 border-b-orange-500'>
+            <div className='nav mt-6  flex justify-between  border-b-orange-500'>
               <div className="">
                 <div className='flex center text-xl'>
                   {/* Toggle Button for Sidebar */}
@@ -132,7 +132,7 @@ const Nav = ({ title }) => {
                       </div>
                     </div>
                   )}
-                  <span className='text-blue-950 font-semibold mb-3'>{title}</span>
+                  <span className='text-blue-950 text-4xl font-semibold mb-3'>{title}</span>
                 </div>
               </div>
               <div className='flex items-center gap-x-5'>

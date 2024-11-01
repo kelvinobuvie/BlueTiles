@@ -1,9 +1,9 @@
 import React from 'react'
-import BackgroundChanger from '../component/BackgroundChanger'
-import Input from '../component/Input'
+import BackgroundChanger from '../component/login/BackgroundChanger'
+import Input from '../component/login/Input'
 import { LuUser2 } from 'react-icons/lu'
 import { GoLock } from 'react-icons/go'
-import SignInbtn from '../component/SignINbtn'
+import SignInbtn from '../component/login/SignINbtn'
 
 const Login = () => {
   return (

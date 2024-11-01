@@ -6,10 +6,11 @@ import { FaTableList } from "react-icons/fa6";
 import { BiBarChartAlt2 } from 'react-icons/bi';
 // import { PiNotePencil } from 'react-icons/pi'; 
 // import { CgNotes } from 'react-icons/cg';
-import { GrTransaction } from "react-icons/gr";
+// import { GrTransaction } from "react-icons/gr";
 import { TbTargetArrow } from "react-icons/tb";
 import { GrAnalytics } from "react-icons/gr";
 import { AiOutlineStock } from "react-icons/ai";
+import { IoWalletOutline } from "react-icons/io5";
 // import { GoDotFill } from 'react-icons/go';
 // import Overview from '../pages/Overview';
 // import Inspections from '../pages/Inspections';
@@ -28,32 +29,32 @@ const SideBar = () => {
             <span className='px-4 mt-10 mb-8 font-bold text-zinc-500 '>TRM</span>
         </div> */}
         <div>
-        <ul className='mt-3 text-white px-4'>
-            <li className='mb- text-xs gap-5 hover:bg-white py-2'>
-                <NavLink to="/overview" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
+        <ul className='mt-3 text-white px-4 flex flex-col gap-3'>
+            <li className='text-sm gap-5 hover:bg-white py-2'>
+                <NavLink to="/overview" className={({ isActive }) => (isActive ? 'text-orange-500 px-3 py-2' : 'text-white px-3 hover:text-orange-500')}>
                     <BiBarChartAlt2 className='inline-block w-4 h-5 mr-3 -mt-1'></BiBarChartAlt2>
                     Dashboard
                 </NavLink>
             </li>
-            <li className='mb- text-xs gap-5 hover:bg-white  py-2'>
+            <li className='mb- text-sm gap-5 hover:bg-white  py-2'>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
-                    <GrTransaction className='inline-block w-4 h-5 mr-3 -mt-1'></GrTransaction>
-                    Transactions
+                    <IoWalletOutline className='inline-block w-4 h-5 mr-3 -mt-1'></IoWalletOutline>
+                    Wallet
                 </NavLink>
             </li>
-            <li className='mb- text-xs hover:bg-white py-2'>
+            <li className='mb- text-sm hover:bg-white py-2'>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
                     <TbTargetArrow  className='inline-block w-4 h-5 mr-3 -mt-1'></TbTargetArrow>
                     Target and Goals
                 </NavLink>
             </li>
-            <li className='mb- text-xs gap-5 hover:bg-white   py-2'>
+            <li className='mb- text-sm gap-5 hover:bg-white   py-2'>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
                     <GrAnalytics  className='inline-block w-4 h-5 mr-3 -mt-1'></GrAnalytics>
                     Report & Analytics
                 </NavLink>
             </li>
-            <li className='mb- text-xs gap-5 hover:bg-white  py-2'>
+            <li className='mb- text-sm gap-5 hover:bg-white  py-2'>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
                     <AiOutlineStock className='inline-block w-4 h-5 mr-3 -mt-1'></AiOutlineStock>
                     Investments
