@@ -5,7 +5,7 @@ const SetNewTargetBtn = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-    navigate('/NewInspection')
+    navigate('/')
   }
 
   return (
