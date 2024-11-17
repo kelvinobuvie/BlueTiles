@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { FaTableList } from "react-icons/fa6";
-import { MdGroups } from 'react-icons/md';
 import { BiBarChartAlt2 } from 'react-icons/bi';
-import { PiNotePencil } from 'react-icons/pi'; 
-import { CgNotes } from 'react-icons/cg';
-import { GoDotFill } from 'react-icons/go';
 import { NavLink } from 'react-router-dom';
+import { TbTargetArrow } from "react-icons/tb";
+import { GrAnalytics } from "react-icons/gr";
+import { AiOutlineStock } from "react-icons/ai";
+import { IoWalletOutline } from "react-icons/io5";
+
 
 const Nav = ({ title }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -61,74 +61,46 @@ const Nav = ({ title }) => {
                       className="sidebar z-10 absolute w-[216px] px-4 py-2 mt-0"
                       ref={sidebarRef} // Attach ref to the sidebar
                     >
-                      <div className='mt-[47px] mb-[42px] w-41 h-14'>
-                        <img src="/LAC_Logo_Alt 2.png" alt="Leadway assurance" />
-                      </div>
                       <div>
-                        <span className='px-3 mt-10 mb-8 font-bold flex items-start text-zinc-500'>TRM</span>
-                      </div>
-                      <div>
-                        <ul className='mt-3 text-white flex flex-col items-start'>
-                          <li className='mb text-xs gap-5 hover:text-orange-500 py-2'>
-                            <NavLink to="/overview" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3')}>
-                              <BiBarChartAlt2 className='inline-block w-4 h-5 mr-3 -mt-1' />
-                              Overview
-                            </NavLink>
-                          </li>
-                          <li className='mb text-xs gap-5 hover:text-orange-500 py-2'>
-                            <NavLink to="/inspections" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3')}>
-                              <FaTableList className='inline-block w-4 h-5 mr-3 -mt-1' />
-                              Inspections
-                            </NavLink>
-                          </li>
-                          <li className='mb text-xs hover:text-orange-500 py-2'>
-                            <NavLink to="/personnel" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3')}>
-                              <MdGroups className='inline-block w-4 h-5 mr-3 -mt-1' />
-                              Personnel
-                            </NavLink>
-                          </li>
-                          <li className='mb text-xs gap-5 hover:text-orange-500 py-2'>
-                            <NavLink to="/workshop" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3')}>
-                              <PiNotePencil className='inline-block w-4 h-5 mr-3 -mt-1' />
-                              Workshop
-                            </NavLink>
-                          </li>
-                          <li className='mb text-xs gap-5 hover:text-orange-500 py-2'>
-                            <NavLink to="/report" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3')}>
-                              <CgNotes className='inline-block w-4 h-5 mr-3 -mt-1' />
-                              Report
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className='mt-16 flex flex-col items-start'>
-                        <span className='px-3 text-zinc-500'>BUSINESSES</span>
-                        <ul className='mb-3 mt-4 text-xs gap-5 px-3 flex flex-col items-start'>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-purple-700' />
-                            <span className='text-white'>Marine</span>
-                          </li>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-orange-700' />
-                            <span className='text-white'>Motor</span>
-                          </li>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-blue-700' />
-                            <span className='text-white'>Property</span>
-                          </li>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-green-700' />
-                            <span className='text-white'>Agric</span>
-                          </li>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-red-700' />
-                            <span className='text-white'>Engineering</span>
-                          </li>
-                          <li className='mb text-sm'>
-                            <GoDotFill className='inline-block w-3 h-3 mr-2 -mt-1 text-yellow-700' />
-                            <span className='text-white'>Bond</span>
-                          </li>
-                        </ul>
+                        <div className={`sidebar active  flex flex-col w-[216px] py-2 min-lg:block h-screen mt-0 bg-blue-950 fixed`}>
+                          <div className='mt-[30px] mb-[42px] w-41 h-14 px-4 flex justify-center items-center'>
+                              <h1 className='px-2 text-white text-2xl font-semibold border-4 border-orange-500 '>BlueTiles</h1>
+                          </div>
+                            <div>
+                              <ul className='mt-3 text-white px-4 flex flex-col gap-3'>
+                                  <li className='text-sm gap-5 hover:bg-white py-2'>
+                                      <NavLink to="/overview" className={({ isActive }) => (isActive ? 'text-orange-500 px-3 py-2' : 'text-white px-3 hover:text-orange-500')}>
+                                          <BiBarChartAlt2 className='inline-block w-4 h-5 mr-3 -mt-1'></BiBarChartAlt2>
+                                          Dashboard
+                                      </NavLink>
+                                  </li>
+                                  <li className='mb- text-sm gap-5 hover:bg-white  py-2'>
+                                      <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
+                                          <IoWalletOutline className='inline-block w-4 h-5 mr-3 -mt-1'></IoWalletOutline>
+                                          Wallet
+                                      </NavLink>
+                                  </li>
+                                  <li className='mb- text-sm hover:bg-white py-2'>
+                                      <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
+                                          <TbTargetArrow  className='inline-block w-4 h-5 mr-3 -mt-1'></TbTargetArrow>
+                                          Target and Goals
+                                      </NavLink>
+                                  </li>
+                                  <li className='mb- text-sm gap-5 hover:bg-white   py-2'>
+                                      <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
+                                          <GrAnalytics  className='inline-block w-4 h-5 mr-3 -mt-1'></GrAnalytics>
+                                          Report & Analytics
+                                      </NavLink>
+                                  </li>
+                                  <li className='mb- text-sm gap-5 hover:bg-white  py-2'>
+                                      <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-500 px-3' : 'text-white px-3 hover:text-orange-500')}>
+                                          <AiOutlineStock className='inline-block w-4 h-5 mr-3 -mt-1'></AiOutlineStock>
+                                          Investments
+                                      </NavLink>
+                                  </li>
+                              </ul>
+                            </div>
+                        </div>
                       </div>
                     </div>
                   )}

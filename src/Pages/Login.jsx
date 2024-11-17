@@ -8,7 +8,7 @@ import SignInbtn from '../component/login/SignINbtn'
 const Login = () => {
   return (
     <div className=' box-content flex w-full h-screen'>
-        <div className='sideA  w-full lg:block md:hidden'>
+        <div className='sideA  w-full lg:block max-lg:hidden'>
             {/* <div className='bg-pictures flex items-end justify-center pb-20'>
                 <div className='text-2xl text-green-800 font-extrabold'>
                     hellow worls

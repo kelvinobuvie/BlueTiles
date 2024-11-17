@@ -19,7 +19,7 @@ const data = [
 
 const Overview = () => {
   return (
-    <div className='ml-56 px-4'>
+    <div className='lg:ml-56 px-4'>
         <Nav title={"Dashboard"}/>
         <div className='container'>
           <div className="grid lg:flex justify-between">
@@ -34,8 +34,8 @@ const Overview = () => {
             <div>
               <OverviewCards/>
             </div>
-            <div className='flex mt-6 gap-5'>
-              <div className='py-2 px-8 w-full border-2 rounded-lg'>
+            <div className='lg:flex mt-6 gap-5'>
+              <div className='py-2 px-8 w-full border-2 rounded-lg max-lg:hidden'>
                 <h1 className='font-medium text-lg text-gray-700'>Financial Overview</h1>
                 <SavingsExpenseChart data={data} />
               </div>
@@ -52,6 +52,7 @@ const Overview = () => {
             </div>
         </div>
     </div>
+    
   )
 }
 
